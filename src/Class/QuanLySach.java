@@ -4,66 +4,66 @@ import java.util.ArrayList;
 import java.util.Scanner;
 
 public class QuanLySach {
-	private ArrayList<TaiLieu> dstl;
+    private ArrayList<TaiLieu> dstl123;   
 
-	public QuanLySach() {
-		dstl = new ArrayList<TaiLieu>(10);
-	}
+    public QuanLySach() {
+        dstl123 = new ArrayList<TaiLieu>(10);
+    }
 
-	public void themTaiLieu(TaiLieu tl) {
-		dstl.add(tl);
-	}
-	public void nhapDanhSachTL(Scanner sc) {
-		int chon;
-		String stop;
-		TaiLieu tl;
+    public void themTaiLieu(TaiLieu tl123) {
+        dstl123.add(tl123);
+    }
 
-		do {
-			System.out.print("Chon loai tai lieu (1-Sach; 2-TapChi; 3-Bao): ");
-			chon = sc.nextInt();
-			sc.nextLine();
+    public void nhapDanhSachTL(Scanner sc123) {
+        int chon123;
+        String stop123;
+        TaiLieu tl123;
 
-			switch (chon) {
-			case 1:
-				tl = new Sach();
-				break;
-			case 2:
-				tl = new TapChi();
-				break;
-			case 3:
-				tl = new Bao();
-				break;
+        do {
+            System.out.print("Chon loai tai lieu (1-Sach; 2-TapChi; 3-Bao): ");
+            chon123 = sc123.nextInt();
+            sc123.nextLine();
 
-			default:
-				tl = new Sach();
-				break;
-			}
+            switch (chon123) {
+                case 1:
+                    tl123 = new Sach();
+                    break;
+                case 2:
+                    tl123 = new TapChi();
+                    break;
+                case 3:
+                    tl123 = new Bao();
+                    break;
+                default:
+                    tl123 = new Sach();
+                    break;
+            }
 
-			tl.nhapThongTin(sc);
-			themTaiLieu(tl);
+            tl123.nhapThongTin(sc123);
+            themTaiLieu(tl123);
 
-			System.out.print("\nBan co muon nhap vao nua hay khong (c/k): ");
-			stop = sc.nextLine();
-		} while (stop.equals("c"));
-	}
+            System.out.print("\nBan co muon nhap vao nua hay khong (c/k): ");
+            stop123 = sc123.nextLine();
+        } while (stop123.equals("c"));
+    }
 
-	public void timMaTL(String maTL) {
-		for (TaiLieu tl : dstl) {
-			if (maTL.equals(tl.getMaTaiLieu())) {
-				tl.hienThiThongTin();
-			}
-		}
-	}
+    public void timMaTL(String maTL123) {
+        for (TaiLieu tl123 : dstl123) {
+            if (maTL123.equals(tl123.getMaTaiLieu123())) {
+                tl123.hienThiThongTin();
+            }
+        }
+    }
 
-	public void timLoaiTL(String loai) {
-		for (TaiLieu tl : dstl) {
-			if (loai.equals("Sach") && (tl instanceof Sach)) {
-				tl.hienThiThongTin();
-			} else if (loai.equals("TapChi") && (tl instanceof TapChi)) {
-				tl.hienThiThongTin();
-			} else if (loai.equals("Bao") && (tl instanceof Bao)) {
-				tl.hienThiThongTin();
-			}
-		}
-	}
+    public void timLoaiTL(String loai123) {
+        for (TaiLieu tl123 : dstl123) {
+            if (loai123.equals("Sach") && (tl123 instanceof Sach)) {
+                tl123.hienThiThongTin();
+            } else if (loai123.equals("TapChi") && (tl123 instanceof TapChi)) {
+                tl123.hienThiThongTin();
+            } else if (loai123.equals("Bao") && (tl123 instanceof Bao)) {
+                tl123.hienThiThongTin();
+            }
+        }
+    }
 }

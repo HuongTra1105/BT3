@@ -1,27 +1,25 @@
 package Testing;
 
 import java.util.Scanner;
-
 import Class.QuanLySach;
 
 public class Test {
 
-	public static void main(String[] args) {
-		Scanner sc = new Scanner(System.in);
+    public static void main(String[] args) {
+        Scanner sc123 = new Scanner(System.in);
 
-		QuanLySach qls = new QuanLySach();
+        QuanLySach qls123 = new QuanLySach();
 
-		qls.nhapDanhSachTL(sc);
+        qls123.nhapDanhSachTL(sc123);
 
-		System.out.print("\n\nNhap vao loai tai lieu can tim: ");
-		String loai = sc.nextLine();
-		qls.timLoaiTL(loai);
+        System.out.print("\n\nNhap vao loai tai lieu can tim: ");
+        String loai123 = sc123.nextLine();
+        qls123.timLoaiTL(loai123);
 
-		System.out.print("\n\nNhap vao ma tai lieu can tim: ");
-		String maTL = sc.nextLine();
-		qls.timMaTL(maTL);
+        System.out.print("\n\nNhap vao ma tai lieu can tim: ");
+        String maTL123 = sc123.nextLine();
+        qls123.timMaTL(maTL123);
 
-		sc.close();
-	}
-
+        sc123.close();
+    }
 }
